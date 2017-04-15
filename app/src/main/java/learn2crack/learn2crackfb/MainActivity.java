@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
                     //share.setVisibility(View.INVISIBLE);
                     //details.setVisibility(View.INVISIBLE);
                     //profile.setProfileId(null);
+                    login.setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -130,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(AccessToken.getCurrentAccessToken() != null){
                     RequestData();
+                    login.setVisibility(View.INVISIBLE);
                     //share.setVisibility(View.VISIBLE);
                     //details.setVisibility(View.VISIBLE);
                     SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
